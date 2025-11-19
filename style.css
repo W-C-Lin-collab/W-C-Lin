@@ -205,3 +205,25 @@ a:hover {
     display: none; /* 簡化：手機版先隱藏導覽列 */
   }
 }
+/* Publications */
+
+.pub-heading {
+  margin-top: 1.5rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.pub-list {
+  margin-top: 0.5rem;
+  padding-left: 1.25rem;
+}
+
+.pub-list li {
+  margin-bottom: 0.5rem;
+}
+
+.pub-status {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+}
