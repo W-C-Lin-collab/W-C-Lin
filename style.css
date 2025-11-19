@@ -227,3 +227,45 @@ a:hover {
   font-size: 0.9rem;
   color: #666;
 }
+/* Profile */
+
+.profile {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.profile-photo img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #e3e3e3;
+  background-color: #ddd;
+}
+
+.profile-info {
+  flex: 1;
+  min-width: 240px;
+}
+
+.profile-info p {
+  margin-bottom: 0.4rem;
+}
+
+/* 手機版排版 */
+@media (max-width: 768px) {
+  .profile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-info {
+    width: 100%;
+  }
+
+  .profile-info h2 {
+    text-align: left;
+  }
+}
