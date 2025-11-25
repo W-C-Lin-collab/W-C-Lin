@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <title>Research</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>W. C. Lin | Research</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- 上方選單（每頁都一樣） -->
   <header class="site-header">
     <div class="container nav-bar">
       <div>
@@ -28,10 +27,51 @@
     <div class="container">
       <section class="content-card">
         <h1 class="page-title">Research</h1>
-        <p class="page-subtitle">Your research content will go here.</p>
+        <p class="page-subtitle">
+          Current topics in optical fiber interferometers, hollow-core fibers, and magnetic-fluid-based sensing.
+        </p>
+
+        <div class="section-block">
+          <h2>Magnetic-Fluid-Based Fiber Magnetic Field Sensors</h2>
+          <p>
+            My recent work focuses on fiber Fabry–Pérot and anti-resonant structures filled with magnetic fluid
+            for magnetic field sensing. By exploiting the tunable refractive index and anisotropy of magnetic
+            fluids under parallel and perpendicular magnetic fields, I design compact fiber structures with high
+            sensitivity and direction-dependent spectral responses.
+          </p>
+        </div>
+
+        <div class="section-block">
+          <h2>Hollow-Core Fiber Mach–Zehnder Interferometers</h2>
+          <p>
+            I am also engaged in the design and analysis of fiber Mach–Zehnder interferometers (FMZIs) based on
+            hollow-core fibers with different core diameters. By connecting discrepant hollow-core sections, it is
+            possible to achieve ultrahigh extinction ratios, ultrabroadband single-dip spectra, and improved sensing
+            performance for temperature and refractive index measurements.
+          </p>
+        </div>
+
+        <div class="section-block">
+          <h2>Optical Measurement & Data Analysis</h2>
+          <p>
+            In addition to device fabrication, I work on optical spectrum acquisition, curve fitting, and signal
+            processing using tools such as MATLAB. These methods are used to evaluate sensitivity, extinction ratio,
+            and stability of the proposed fiber sensors, as well as to model the magneto-optical behavior of
+            magnetic fluids.
+          </p>
+        </div>
       </section>
     </div>
   </main>
 
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> W. C. Lin. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
