@@ -3,187 +3,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>W. C. Lin | Personal Website</title>
+  <title>W. C. Lin | Profile</title>
   <link rel="stylesheet" href="style.css" />
-  <meta name="description" content="W. C. Lin 個人網站｜光電工程、光纖感測與磁性流體研究作品集">
+  <meta name="description" content="W. C. Lin 個人網站｜光纖感測與磁性流體研究。">
 </head>
 <body>
   <header class="site-header">
     <div class="container nav-container">
       <div class="logo">W. C. Lin</div>
-      <nav class="nav">
-  <a href="#profile">Profile</a>
-  <a href="#research">Research</a>
-  <a href="#publications">Publications</a>
-  <a href="#experience">Experience</a>
-  <a href="#contact">Contact</a>
-</nav>
-
+      <!-- 上方就只放網站名稱，分類由左邊 sidebar 管 -->
     </div>
   </header>
 
-  <main>
-    <!-- Hero 區塊 -->
-    <section class="hero">
-      <div class="container hero-content">
-        <div>
-          <p class="hero-subtitle">Optoelectronics • Fiber Sensing • Magnetic Fluid</p>
-          <h1 class="hero-title">Hi, I’m W. C. Lin.</h1>
-          <p class="hero-text">
-            我是就讀光電工程相關領域的學生／研究者，專注於光纖干涉結構、磁性流體折射率調控與光纖磁場感測器設計。
-            這裡整理了我的研究方向、專題作品與實驗經驗。
-          </p>
-        </div>
-      </div>
-    </section>
+  <main class="page-layout">
+    <!-- 左側選單 -->
+    <aside class="sidebar">
+      <div class="sidebar-title">Site Menu</div>
+      <ul class="sidebar-nav">
+        <li><a href="index.html" class="active">Profile</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </aside>
 
-        <!-- Profile -->
-    <section id="profile" class="section section-alt">
-      <div class="container profile">
-        <div class="profile-photo">
-          <!-- 把 img/profile.jpg 換成你實際檔名 -->
-          <img src="大頭照.jpg" alt="W. C. Lin portrait">
-        </div>
-        <div class="profile-info">
-          <h2>Profile</h2>
+    <!-- 右側主要內容：Profile -->
+    <section class="main-panel">
+      <h1>Profile</h1>
+
+      <div class="profile-header">
+        <img src="img/大頭照.jpg" alt="W. C. Lin portrait" />
+        <div class="profile-header-main">
           <p><strong>Name：</strong>Wei-Cheng Lin (林威丞)</p>
-          <p><strong>Affiliation：</strong>
-            Department of Optoelectronic Engineering, National United University, Taiwan
-          </p>
+          <p><strong>Affiliation：</strong>Department of Optoelectronic Engineering, National United University, Taiwan</p>
           <p><strong>Email：</strong>
-            <a href="mailto:linw89763@gmail.com">linw89763@gmail.com</a>
+            <a href="mailto:your.email@example.com">your.email@example.com</a>
           </p>
-          <p><strong>Research Interests：</strong></p>
-          <ul class="list">
-            <li>Optical fiber interferometers (Mach–Zehnder, Fabry–Pérot)</li>
-            <li>Hollow-core fibers and anti-resonant guiding (ARROW)</li>
-            <li>Magnetic-fluid refractive index tuning and anisotropy</li>
-            <li>Fiber magnetic field sensors with tunable sensitivity</li>
-            <li>Optical spectrum analysis and data fitting for sensing applications</li>
-          </ul>
+          <p><strong>Research Fields：</strong>Optical fiber interferometers, hollow-core fibers, magnetic-fluid based fiber sensors</p>
         </div>
       </div>
-    </section>
 
+      <h2>Short Biography</h2>
+      <p>
+        I am currently an undergraduate student in electro-optical engineering, with research interests in optical fiber
+        interferometers, anti-resonant guiding mechanisms, and the tunable refractive index of magnetic fluids for
+        high-sensitivity magnetic field sensing. I have experience in synthesizing magnetic fluids, building Helmholtz-coil
+        magnetic field systems, and designing fiber Fabry–Pérot and Mach–Zehnder interferometers.
+      </p>
+      <p>
+        I actively participate in academic conferences and competitions, presenting my work on fiber magnetic field sensors
+        and hollow-core fiber interferometers, and I am continuously improving my skills in optical measurements, data
+        analysis, and scientific communication.
+      </p>
 
-    <!-- Research -->
-    <section id="research" class="section section-alt">
-      <div class="container">
-        <h2>Research Interests</h2>
-        <ul class="list">
-          <li>光纖干涉結構設計（Mach–Zehnder、Fabry–Pérot、Michelson 等）</li>
-          <li>中空光纖（HCF）與反共振導光機制（ARROW）</li>
-          <li>磁性流體折射率與各向異性調控及其在感測器中的應用</li>
-          <li>光纖磁場感測器之結構設計、靈敏度與方向性量測</li>
-          <li>數據擬合與訊號處理（如 MATLAB 模型擬合與光譜分析）</li>
-        </ul>
-      </div>
-    </section>
-
-      <!-- Publications -->
-    <section id="publications" class="section">
-      <div class="container">
-        <h2>Publications</h2>
-
-        <h3 class="pub-heading">Journal Articles</h3>
-        <ul class="pub-list">
-          <li>
-            Cheng-Ling Lee, Yi-Kai Chiu, <strong>Wei-Cheng Lin</strong>,
-            “Photothermal Effect in Water-Filled Optical Fiber Interferometers
-            Induced by 1950 nm Thulium-Doped Laser Absorption”.
-            <span class="pub-status">
-              Planned submission to <em>Applied Physics Letters</em>.
-            </span>
-          </li>
-        </ul>
-
-        <h3 class="pub-heading">Conference Presentations</h3>
-        <ol class="pub-list">
-          <li>
-            <strong>Wei-Cheng Lin</strong>, Yi-Kai Chiu, Jun-Feng Ni, and Cheng-Ling Lee*,
-            “Highly Sensitive Magnetic Field Sensor Based on an Anti-Resonant
-            Magnetic-Fluid Core Fiber Fabry-Pérot Interferometer”,
-            <em>OPTIC</em>, Taipei, Taiwan, 2025.
-          </li>
-          <li>
-            Jun-Feng Ni†, Yi-Kai Chiu, <strong>Wei-Cheng Lin</strong>,
-            Wen-Fung Liu, and Cheng-Ling Lee*,
-            “FBG-Assisted FMZI for Narrowband, Intensity-Demodulated Temperature Sensing”,
-            <em>ISNST</em>, Tainan, Taiwan, 2025.
-          </li>
-          <li>
-            <strong>Wei-Cheng Lin</strong>, Yan-Han Lu, Ren-Xiang Luo, Jing-Yaun Fan,
-            and Cheng-Ling Lee*,
-            “High Extinction Ratio Fiber Mach-Zehnder Interferometer based on
-            Connections of Discrepant Hollow-Core Fibers”,
-            <em>ICKII</em>, Nagoya, Japan, 2024.
-          </li>
-          <li>
-            Yan-Han Lu, <strong>Wei-Cheng Lin</strong>, Jing-Yaun Fan, and Cheng-Ling Lee*,
-            “Leaky-Guided Hollow Core Fiber Mach-Zehnder Interferometer for Ultrahigh
-            Extinction Ratio based on Connecting a Large Core Hollow Fiber”,
-            <em>OPTIC</em>, Taipei, Taiwan, 2024.
-          </li>
-          <li>
-            Jing-Yaun Fan, Yan-Han Lu, <strong>Wei-Cheng Lin</strong>, and Cheng-Ling Lee*,
-            “Ultrabroadband Single Wavelength Dip and Highly Sensitive Fiber
-            Mach-Zehnder Interferometer”,
-            <em>ICKII</em>, Nagoya, Japan, 2024.
-          </li>
-          <li>
-            Ren-Xiang Luo, Yan-Han Lu, Yi-Chen Huang, <strong>Wei-Cheng Lin</strong>,
-            Jing-Yaun Fan, and Cheng-Ling Lee*,
-            “Ultrahigh Extinction Ratio Fiber Mach-Zehnder Interferometer based on
-            Connections of Discrepant Hollow-Core Fibers”,
-            <em>OPTIC</em>, Taipei, Taiwan, 2024.
-          </li>
-        </ol>
-      </div>
-    </section>
-
-
-    <!-- Experience -->
-    <section id="experience" class="section section-alt">
-      <div class="container">
-        <h2>Experience</h2>
-        <ul class="timeline">
-          <li>
-            <h3>Research Assistant / 專題生</h3>
-            <p class="timeline-meta">Optical Fiber Sensing Lab（範例，可自行改成實際實驗室名稱）</p>
-            <p>
-              參與光纖干涉式磁場感測研究，負責磁性流體合成、實驗架構搭建、光譜量測與數據分析，
-              並將成果整理為論文與海報投稿至國內外研討會。
-            </p>
-          </li>
-          <li>
-            <h3>Competitions & Awards</h3>
-            <p>
-              可列出參與之研討會報告、最佳論文獎候選、學生論文獎、專題競賽等經歷，讓教授或面試官快速掌握你的實績。
-            </p>
-          </li>
-          <li>
-            <h3>Volunteering & Activities</h3>
-            <p>
-              例如系隊、志工服務或營隊助教等，簡要說明你在團隊合作與溝通上的經驗與收穫。
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>
-          如果對我的研究、專題成果或合作有興趣，歡迎透過以下方式聯絡我：
-        </p>
-        <ul class="list">
-          <li>Email：<a href="mailto:linw897863@gmail.com">linw897863@gmail.com</a>（）</li>
-          <!-- <li>LinkedIn：<a href="#" target="_blank">LinkedIn Profile</a></li> -->
-          <!-- <li>GitHub：<a href="#" target="_blank">GitHub Profile</a></li> -->
-        </ul>
-      </div>
+      <h2>Research Interests</h2>
+      <ul class="inline-list">
+        <li>Optical fiber interferometers (Mach–Zehnder, Fabry–Pérot, FMZI)</li>
+        <li>Hollow-core fibers and anti-resonant reflecting optical waveguides (ARROW)</li>
+        <li>Magnetic-fluid refractive index tuning and anisotropy under external magnetic fields</li>
+        <li>Fiber-based magnetic field sensors with tunable sensitivity and vector response</li>
+        <li>Optical spectrum analysis and data fitting for sensing applications</li>
+      </ul>
     </section>
   </main>
 
@@ -194,7 +75,6 @@
   </footer>
 
   <script>
-    // 自動顯示今年年份
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
