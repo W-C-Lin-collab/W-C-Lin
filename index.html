@@ -5,67 +5,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>W. C. Lin | Profile</title>
   <link rel="stylesheet" href="style.css" />
-  <meta name="description" content="W. C. Lin 個人網站｜光纖感測與磁性流體研究。">
+  <meta name="description" content="W. C. Lin 個人網站｜光纖干涉、反共振與磁性流體光纖感測研究。">
 </head>
 <body>
+  <!-- 上方選單 -->
   <header class="site-header">
-    <div class="container nav-container">
-      <div class="logo">W. C. Lin</div>
-      <!-- 上方就只放網站名稱，分類由左邊 sidebar 管 -->
+    <div class="container nav-bar">
+      <div>
+        <div class="logo">W. C. LIN</div>
+        <div class="site-subtitle">Optical Fiber & Magnetic Fluid Sensing</div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link active">Profile</a>
+        <a href="research.html" class="nav-link">Research</a>
+        <a href="publications.html" class="nav-link">Publications</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <main class="page-layout">
-    <!-- 左側選單 -->
-    <aside class="sidebar">
-      <div class="sidebar-title">Site Menu</div>
-      <ul class="sidebar-nav">
-        <li><a href="index.html" class="active">Profile</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </aside>
+  <!-- 主要內容 -->
+  <main class="page-main">
+    <div class="container">
+      <section class="content-card">
+        <h1 class="page-title">Profile</h1>
+        <p class="page-subtitle">
+          Undergraduate researcher in optical fiber sensing and magnetic-fluid-based photonic devices.
+        </p>
 
-    <!-- 右側主要內容：Profile -->
-    <section class="main-panel">
-      <h1>Profile</h1>
-
-      <div class="profile-header">
-        <img src="img/大頭照.jpg" alt="W. C. Lin portrait" />
-        <div class="profile-header-main">
-          <p><strong>Name：</strong>Wei-Cheng Lin (林威丞)</p>
-          <p><strong>Affiliation：</strong>Department of Optoelectronic Engineering, National United University, Taiwan</p>
-          <p><strong>Email：</strong>
-            <a href="mailto:your.email@example.com">your.email@example.com</a>
-          </p>
-          <p><strong>Research Fields：</strong>Optical fiber interferometers, hollow-core fibers, magnetic-fluid based fiber sensors</p>
+        <!-- 大頭照 + 基本資料 -->
+        <div class="profile-header">
+          <div class="profile-photo">
+            <!-- 如果檔名不是大頭照.jpg，這裡要一起改 -->
+            <img src="img/大頭照.jpg" alt="Portrait of W. C. Lin" />
+          </div>
+          <div class="profile-meta">
+            <p class="profile-meta-row">
+              <strong>Name：</strong>Wei-Cheng Lin (林威丞)
+            </p>
+            <p class="profile-meta-row">
+              <strong>Affiliation：</strong>
+              Department of Optoelectronic Engineering, National United University, Taiwan
+            </p>
+            <p class="profile-meta-row">
+              <strong>Email：</strong>
+              <a href="mailto:linw89763@gmail.com">your.email@example.com</a>
+            </p>
+            <p class="profile-meta-row">
+              <strong>Research Fields：</strong>
+              Optical fiber interferometers, hollow-core fibers, magnetic-fluid-based fiber sensors
+            </p>
+          </div>
         </div>
-      </div>
 
-      <h2>Short Biography</h2>
-      <p>
-        I am currently an undergraduate student in electro-optical engineering, with research interests in optical fiber
-        interferometers, anti-resonant guiding mechanisms, and the tunable refractive index of magnetic fluids for
-        high-sensitivity magnetic field sensing. I have experience in synthesizing magnetic fluids, building Helmholtz-coil
-        magnetic field systems, and designing fiber Fabry–Pérot and Mach–Zehnder interferometers.
-      </p>
-      <p>
-        I actively participate in academic conferences and competitions, presenting my work on fiber magnetic field sensors
-        and hollow-core fiber interferometers, and I am continuously improving my skills in optical measurements, data
-        analysis, and scientific communication.
-      </p>
+        <!-- 簡歷 -->
+        <div class="section-block">
+          <h2>Short Biography</h2>
+          <p>
+            I am currently an undergraduate student majoring in electro-optical engineering. My research focuses on
+            optical fiber interferometers, anti-resonant guiding mechanisms, and the tunable refractive index of
+            magnetic fluids for high-sensitivity magnetic field sensing.
+          </p>
+          <p>
+            I have hands-on experience in synthesizing magnetic fluids, building Helmholtz-coil magnetic field systems,
+            and designing fiber Fabry–Pérot and Mach–Zehnder interferometers. I actively participate in academic
+            conferences and student paper competitions to present my work and improve my scientific communication skills.
+          </p>
+        </div>
 
-      <h2>Research Interests</h2>
-      <ul class="inline-list">
-        <li>Optical fiber interferometers (Mach–Zehnder, Fabry–Pérot, FMZI)</li>
-        <li>Hollow-core fibers and anti-resonant reflecting optical waveguides (ARROW)</li>
-        <li>Magnetic-fluid refractive index tuning and anisotropy under external magnetic fields</li>
-        <li>Fiber-based magnetic field sensors with tunable sensitivity and vector response</li>
-        <li>Optical spectrum analysis and data fitting for sensing applications</li>
-      </ul>
-    </section>
+        <!-- 研究興趣 -->
+        <div class="section-block">
+          <h2>Research Interests</h2>
+          <ul class="inline-list">
+            <li>Optical fiber interferometers (Mach–Zehnder, Fabry–Pérot, FMZI)</li>
+            <li>Hollow-core fibers and anti-resonant reflecting optical waveguides (ARROW)</li>
+            <li>Magnetic-fluid refractive index tuning and anisotropy under external magnetic fields</li>
+            <li>Fiber-based magnetic field sensors with tunable sensitivity and vector response</li>
+            <li>Optical spectrum analysis, curve fitting, and sensing performance evaluation</li>
+          </ul>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer class="site-footer">
@@ -75,7 +96,7 @@
   </footer>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
