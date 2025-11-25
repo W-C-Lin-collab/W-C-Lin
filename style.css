@@ -269,3 +269,109 @@ a:hover {
     text-align: left;
   }
 }
+/* ---- Layout：左側選單 + 右側內容 ---- */
+
+.page-layout {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 1rem 3rem;
+}
+
+.sidebar {
+  width: 210px;
+  max-width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  font-size: 0.95rem;
+}
+
+.sidebar-title {
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.sidebar-nav {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar-nav li + li {
+  margin-top: 0.4rem;
+}
+
+.sidebar-nav a {
+  color: #444;
+  text-decoration: none;
+}
+
+.sidebar-nav a:hover {
+  color: #000;
+}
+
+.sidebar-nav .active {
+  font-weight: 700;
+  color: #1f6feb;
+}
+
+.main-panel {
+  flex: 1;
+  max-width: 760px;
+}
+
+.main-panel h1 {
+  font-size: 1.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.main-panel h2 {
+  font-size: 1.2rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+/* Profile 區塊（大頭照＋文字） */
+.profile-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.profile-header img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #e3e3e3;
+  background-color: #ddd;
+}
+
+.profile-header-main p {
+  margin-bottom: 0.35rem;
+}
+
+/* 小型列表 */
+.inline-list {
+  list-style: disc;
+  padding-left: 1.25rem;
+}
+
+/* RWD：手機就變上下排列 */
+@media (max-width: 768px) {
+  .page-layout {
+    flex-direction: column;
+    padding-top: 1.5rem;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .main-panel {
+    max-width: 100%;
+  }
+}
