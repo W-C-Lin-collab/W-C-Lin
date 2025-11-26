@@ -276,6 +276,12 @@ img {
 
 /* ========== Honors page 特化 ========== */
 
+.caption-sub {
+  font-size: 0.85em;
+  color: #556270;
+  margin-top: 2px;
+}
+
 .honors-section {
   margin-top: 1.8rem;
 }
