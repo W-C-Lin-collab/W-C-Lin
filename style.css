@@ -273,14 +273,15 @@ img {
 
 /* ========== Honors page 特化 ========== */
 
-/* 讓有 cert-gallery 的卡片變成左右兩欄（左文字、右圖片） */
-/* ========== Honors page 特化 ========== */
+.honors-section {
+  margin-top: 1.8rem;
+}
 
-/* 整頁左右排版：左邊文字，右邊圖片牆 */
+/* Honors 區塊：左邊文字，右邊圖片牆 */
 .honors-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1.4fr) minmax(0, 2fr);
-  gap: 2rem;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 2fr);
+  gap: 1.5rem;
   align-items: flex-start;
 }
 
@@ -290,32 +291,20 @@ img {
   }
 }
 
-.honors-lists .section-block {
-  margin-top: 1.2rem;
-}
-
-.cert-gallery h2 {
-  font-size: 1.05rem;
-}
-
-.cert-gallery p {
-  font-size: 0.9rem;
-  color: #7b8794;
-}
-
-/* Certificates：圖片在上、標題在下，完整顯示證書，2–3 欄排版 */
-.gallery-grid {
-  margin-top: 1rem;
+/* 右側獎狀圖片牆 */
+.honors-gallery .gallery-grid {
+  margin-top: 0.2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
 }
 
+/* 獎狀卡片樣式：圖片在上、標題在下，不裁切 */
 .gallery-item {
   background: #ffffff;
   border-radius: 16px;
   border: 1px solid #e2e8f0;
-  padding: 0.9rem 0.9rem 0.85rem;
+  padding: 0.9rem 0.9rem 0.8rem;
   box-shadow: 0 12px 26px rgba(15, 23, 42, 0.06);
   text-align: center;
   transition: transform 0.18s ease, box-shadow 0.18s ease;
@@ -323,7 +312,7 @@ img {
 
 .gallery-item img {
   width: 100%;
-  height: auto;          /* ❗ 不裁切，維持比例 */
+  height: auto;          /* 不裁切，維持比例 */
   object-fit: contain;
   background: #ffffff;
   border-radius: 12px;
@@ -334,15 +323,13 @@ img {
   margin-top: 0.55rem;
   font-size: 0.9rem;
   color: #334155;
-  min-height: 2.4em;     /* 讓兩行文字高度看起來比較整齊 */
 }
 
-/* hover 小小浮起就好 */
+/* hover 小小浮起即可 */
 .gallery-item:hover {
   transform: translateY(-4px);
   box-shadow: 0 18px 34px rgba(15, 23, 42, 0.12);
 }
-
 /* ========== Footer ========== */
 
 .site-footer {
