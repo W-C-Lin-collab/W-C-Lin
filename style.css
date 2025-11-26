@@ -425,3 +425,64 @@ img {
     width: 100%;
   }
 }
+/* ========== Experience: Photo + Text Cards (Nordic Style) ========== */
+
+.exp-photo-card {
+  display: flex;
+  gap: 1.6rem;
+  background: #ffffff;
+  border: 1px solid #dde3eb;
+  border-radius: 20px;
+  padding: 1.6rem;
+  margin-bottom: 1.8rem;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.10);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.exp-photo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 48px rgba(15, 23, 42, 0.16);
+}
+
+.exp-photo-card img {
+  width: 240px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid #e5e8ee;
+  background: #f7f9fb;
+}
+
+.exp-photo-text {
+  flex: 1;
+}
+
+.exp-photo-text h3 {
+  font-size: 1.15rem;
+  color: #111827;
+  margin-bottom: 0.25rem;
+}
+
+.exp-meta-2 {
+  font-size: 0.9rem;
+  color: #6b7b89;
+  margin-bottom: 0.6rem;
+}
+
+.exp-photo-text p,
+.exp-photo-text li {
+  font-size: 0.95rem;
+  color: #3b4a5a;
+  margin-bottom: 0.4rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .exp-photo-card {
+    flex-direction: column;
+  }
+  .exp-photo-card img {
+    width: 100%;
+    height: auto;
+  }
+}
