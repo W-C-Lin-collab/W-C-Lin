@@ -3,64 +3,106 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>W. C. Lin | Experience</title>
-  <link rel="stylesheet" href="style.css?v=4" />
-
+  <title>Experience | W. C. Lin</title>
+  <!-- 版本號如果你現在是 v=4 就改成 4，重點是跟其他頁一樣 -->
+  <link rel="stylesheet" href="style.css?v=3" />
 </head>
+
 <body>
+  <!-- 上方選單 -->
   <header class="site-header">
-    <div class="container nav-container">
-      <div class="logo">W. C. Lin</div>
+    <div class="container nav-bar">
+      <div>
+        <div class="logo">W. C. LIN</div>
+        <div class="site-subtitle">Optical Fiber & Magnetic Fluid Sensing</div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Profile</a>
+        <a href="research.html" class="nav-link">Research</a>
+        <a href="publications.html" class="nav-link">Publications</a>
+        <a href="experience.html" class="nav-link active">Experience</a>
+        <a href="honors.html" class="nav-link">Honors</a>
+      </nav>
     </div>
   </header>
 
-  <main class="page-layout">
-    <aside class="sidebar">
-      <div class="sidebar-title">Site Menu</div>
-      <ul class="sidebar-nav">
-        <li><a href="index.html">Profile</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="experience.html" class="active">Experience</a></li>
-        <li><a href="honors.html" class="nav-link">Honors</a>
-      </ul>
-    </aside>
+  <!-- 主內容 -->
+  <main class="page-main">
+    <div class="container">
+      <section class="content-card">
+        <h1 class="page-title">Experience</h1>
+        <p class="page-subtitle">
+          Research projects, awards, and extracurricular activities in electro-optics and fiber sensing.
+        </p>
 
-    <section class="main-panel">
-      <h1>Experience</h1>
+        <!-- 1. Research & Projects 研究與專題：用卡片排版 -->
+        <div class="section-block">
+          <h2>Research &amp; Projects</h2>
 
-      <h2>Research & Projects</h2>
-      <ul class="timeline">
-        <li>
-          <h3>Undergraduate Research / Fiber Sensing Lab</h3>
-          <p class="timeline-meta">Optical Fiber Sensing and Magnetic Fluid Devices</p>
+          <div class="exp-grid">
+            <!-- 卡片 1：Undergraduate Research -->
+            <article class="exp-card">
+              <h3>Undergraduate Research / Fiber Sensing Lab</h3>
+              <p class="exp-meta">
+                Optical Fiber Sensing and Magnetic-Fluid Devices · 2023 – Present
+              </p>
+              <ul class="exp-list">
+                <li>
+                  Conducted research on magnetic-fluid-filled fiber Fabry–Pérot and anti-resonant structures
+                  for magnetic field sensing.
+                </li>
+                <li>
+                  Responsibilities include magnetic fluid synthesis, Helmholtz-coil system setup,
+                  optical spectrum measurements, and data analysis for sensitivity and extinction-ratio evaluation.
+                </li>
+              </ul>
+            </article>
+
+            <!-- 卡片 2：Hollow-Core MZI 專題 -->
+            <article class="exp-card">
+              <h3>Hollow-Core Fiber Mach–Zehnder Interferometers</h3>
+              <p class="exp-meta">
+                High-Extinction-Ratio FMZI Design · 2024 –
+              </p>
+              <ul class="exp-list">
+                <li>
+                  Participated in the design and characterization of FMZIs based on connections of discrepant
+                  hollow-core fibers.
+                </li>
+                <li>
+                  Focused on ultrahigh extinction ratio and ultrabroadband single-dip spectra
+                  for temperature sensing and refractive-index measurement.
+                </li>
+              </ul>
+            </article>
+
+            <!-- 你之後如果有新的專題，可以照這個格式再加一張卡片 -->
+          </div>
+        </div>
+
+        <!-- 2. Awards & Honors：簡短說明，引導到 Honors 頁 -->
+        <div class="section-block">
+          <h2>Awards &amp; Honors</h2>
           <p>
-            Conducted research on magnetic-fluid-filled fiber Fabry–Pérot and anti-resonant structures for magnetic
-            field sensing. Responsibilities include magnetic fluid synthesis, Helmholtz-coil system setup, optical
-            spectrum measurements, and data analysis for sensitivity and extinction ratio evaluation.
+            My research work has been recognized through student paper award nominations and
+            conference paper awards in international conferences such as OPTIC, ISNST, and ICKII.
+            A detailed list of honors and certificates can be found on the
+            <a href="honors.html">Honors</a> page.
           </p>
-        </li>
-        <li>
-          <h3>Hollow-Core Fiber Mach–Zehnder Interferometers</h3>
+        </div>
+
+        <!-- 3. Activities & Volunteering -->
+        <div class="section-block">
+          <h2>Activities &amp; Volunteering</h2>
           <p>
-            Participated in the design and characterization of FMZIs based on connections of discrepant hollow-core
-            fibers, focusing on ultrahigh extinction ratio and ultrabroadband single-dip spectra for temperature sensing.
+            In addition to academic work, I participate in departmental volleyball team activities
+            and weekly volunteer tutoring for children from underprivileged backgrounds,
+            which has strengthened my teamwork, responsibility, and communication skills.
           </p>
-        </li>
-      </ul>
+        </div>
 
-      <h2>Awards & Honors</h2>
-      <p>
-        You can list here items such as student paper awards, best paper nomination, or scholarships (可依實際情況自行補上中文或英文項目)。
-      </p>
-
-      <h2>Activities & Volunteering</h2>
-      <p>
-        In addition to academic work, I participate in departmental volleyball team activities and weekly volunteer
-        tutoring for children from underprivileged backgrounds, which has strengthened my teamwork, responsibility,
-        and communication skills.
-      </p>
-    </section>
+      </section>
+    </div>
   </main>
 
   <footer class="site-footer">
@@ -70,7 +112,7 @@
   </footer>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
