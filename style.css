@@ -274,24 +274,24 @@ img {
 /* ========== Honors page 特化 ========== */
 
 /* 讓有 cert-gallery 的卡片變成左右兩欄（左文字、右圖片） */
-@media (min-width: 960px) {
-  .content-card:has(.cert-gallery) {
-    display: grid;
-    grid-template-columns: minmax(0, 1.6fr) minmax(0, 2.1fr);
-    column-gap: 2.4rem;
-    align-items: flex-start;
-  }
+/* ========== Honors page 特化 ========== */
 
-  .content-card:has(.cert-gallery) .page-title,
-  .content-card:has(.cert-gallery) .page-subtitle,
-  .content-card:has(.cert-gallery) .section-block:not(.cert-gallery) {
-    grid-column: 1 / 2;
-  }
+/* 整頁左右排版：左邊文字，右邊圖片牆 */
+.honors-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 2fr);
+  gap: 2rem;
+  align-items: flex-start;
+}
 
-  .content-card:has(.cert-gallery) .cert-gallery {
-    grid-column: 2 / 3;
-    grid-row: 1 / 5;
+@media (max-width: 900px) {
+  .honors-layout {
+    grid-template-columns: 1fr;
   }
+}
+
+.honors-lists .section-block {
+  margin-top: 1.2rem;
 }
 
 .cert-gallery h2 {
@@ -303,50 +303,44 @@ img {
   color: #7b8794;
 }
 
-/* 圖片區改成「完整證書＋文字說明」的卡片，避免被裁切 */
-
+/* Certificates：圖片在上、標題在下，完整顯示證書，2–3 欄排版 */
 .gallery-grid {
-  margin-top: 0.9rem;
+  margin-top: 1rem;
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-}
-
-@media (min-width: 1100px) {
-  .gallery-grid {
-    grid-template-columns: 1fr;
-  }
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
 }
 
 .gallery-item {
-  background: #f7f9fb;
-  border-radius: 14px;
-  border: 1px solid #e0e5ef;
-  padding: 0.85rem 1rem;
-  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  padding: 0.9rem 0.9rem 0.85rem;
+  box-shadow: 0 12px 26px rgba(15, 23, 42, 0.06);
+  text-align: center;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 
 .gallery-item img {
-  width: 200px;
-  max-width: 40%;
-  max-height: 260px;
-  object-fit: contain;           /* ❗ 不再裁切，完整顯示 */
+  width: 100%;
+  height: auto;          /* ❗ 不裁切，維持比例 */
+  object-fit: contain;
   background: #ffffff;
-  border-radius: 10px;
-  border: 1px solid #e3e8f0;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
 }
 
 .gallery-item figcaption {
-  flex: 1;
+  margin-top: 0.55rem;
   font-size: 0.9rem;
-  color: #3b4a5a;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  color: #334155;
+  min-height: 2.4em;     /* 讓兩行文字高度看起來比較整齊 */
+}
+
+/* hover 小小浮起就好 */
+.gallery-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 34px rgba(15, 23, 42, 0.12);
 }
 
 /* ========== Footer ========== */
