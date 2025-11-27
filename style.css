@@ -344,6 +344,71 @@ img {
   transform: translateY(-4px);
   box-shadow: 0 20px 40px rgba(15, 23, 42, 0.16);
 }
+/* ===== Experience 卡片整體 ===== */
+.exp-photo-card {
+  display: flex;
+  gap: 1.5rem;
+  background: #ffffff;
+  padding: 1.8rem;
+  border-radius: 22px;
+  border: 1px solid #dde3ec;
+  box-shadow: 0 18px 42px rgba(15,23,42,0.08);
+  margin-bottom: 2rem;
+}
+
+/* ===== 左邊圖片並排 ===== */
+.exp-photo-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+/* ===== 兩張圖完整顯示 ===== */
+.exp-photo-row img {
+  width: 220px;         /* 你可調整：220–260 都好看 */
+  height: auto;
+  object-fit: contain;  /* ⭐ 保證完整顯示，不裁切 */
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  background: #f7f9fb;
+}
+
+/* ===== 右側文字 ===== */
+.exp-photo-text {
+  flex: 1;
+}
+
+.exp-photo-text h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.35rem;
+  color: #1f2937;
+}
+
+.exp-meta-2 {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
+/* ===== 手機版（自動改為上下） ===== */
+@media (max-width: 768px) {
+  .exp-photo-card {
+    flex-direction: column;
+  }
+
+  .exp-photo-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .exp-photo-row img {
+    width: 100%;
+    max-width: 360px;
+  }
+}
+
 
 /* ========== Honors page 特化 ========== */
 
