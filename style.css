@@ -570,15 +570,3 @@ img {
     height: auto;
   }
 }
-/* ===== 強制所有 Experience 卡片裡的圖片完整顯示 ===== */
-.exp-photo-card img,
-.exp-photo-row img,
-.exp-photo-images img {
-  width: 100%;
-  max-width: 260px;
-  height: auto !important;
-  object-fit: contain !important;
-  border-radius: 16px;
-  border: 1px solid #e5e7eb;
-  background: #f7f9fb;
-}
