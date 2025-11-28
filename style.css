@@ -570,3 +570,103 @@ img {
     height: auto;
   }
 }
+/* ========== Profile page with Nordic color blocks ========== */
+
+.profile-card {
+  padding: 0; /* 讓內部自己控制留白 */
+  overflow: hidden;
+}
+
+/* 上方彩色 hero 區 */
+.profile-hero {
+  background: linear-gradient(135deg, #e4f0ff, #f6fbff);
+  border-radius: 22px 22px 0 0;
+  border-bottom: 1px solid #d4e1f3;
+  padding: 1.8rem 2.4rem 1.6rem;
+}
+
+.profile-hero-inner {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.profile-hero-left {
+  flex-shrink: 0;
+}
+
+.profile-hero-right {
+  flex: 1;
+}
+
+.profile-hero .page-title {
+  margin-bottom: 0.3rem;
+}
+
+.profile-hero .page-subtitle {
+  margin-bottom: 1.1rem;
+}
+
+/* 讓 meta 區塊看起來更像資訊列 */
+.profile-meta-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr);
+  row-gap: 0.25rem;
+}
+
+.profile-meta-row {
+  font-size: 0.95rem;
+  color: #1f2933;
+}
+
+/* 下方兩個色塊區域 */
+.profile-block-grid {
+  padding: 1.8rem 2.4rem 2.1rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: 1.4rem;
+}
+
+.profile-block {
+  border-radius: 18px;
+  border: 1px solid #dde5f3;
+  padding: 1.4rem 1.5rem 1.3rem;
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.06);
+}
+
+/* Biography 色塊：淡藍北歐風 */
+.profile-block-bio {
+  background: linear-gradient(135deg, #edf3ff, #f9fbff);
+}
+
+/* Skill 色塊：帶一點淡綠 */
+.profile-block-skill {
+  background: linear-gradient(135deg, #ecf8f3, #f9fcfb);
+  border-color: #d0e7dc;
+}
+
+.profile-block-title {
+  font-size: 1.12rem;
+  color: #111827;
+  margin-bottom: 0.6rem;
+}
+
+/* 讓內文更舒適一點 */
+.profile-block p {
+  font-size: 0.95rem;
+  color: #37475a;
+  margin-bottom: 0.45rem;
+}
+
+/* RWD：手機版改成上下堆疊 */
+@media (max-width: 768px) {
+  .profile-hero-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-block-grid {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 1.6rem 1.6rem 1.8rem;
+  }
+}
