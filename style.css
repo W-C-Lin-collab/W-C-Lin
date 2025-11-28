@@ -368,30 +368,71 @@ img {
 }
 /* ========== Experience page 特化 ========== */
 
-/* 卡片式經驗排版 grid（研究經驗 / 學術發表） */
-.exp-grid {
-  margin-top: 0.8rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.2rem;
-}
-/* 左邊放多張照片的容器 */
-.exp-photo-images {
-  flex-shrink: 0;
+/* ========== Experience page：照片卡片 ========== */
+
+.exp-photo-card {
   display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  max-width: 260px;
+  gap: 1.6rem;
+  background: #fdfaf6;
+  padding: 1.8rem 1.9rem;
+  border-radius: 22px;
+  border: 1px solid #e1d7cc;
+  box-shadow: 0 18px 42px rgba(73, 54, 35, 0.12);
+  margin-bottom: 2rem;
 }
 
-/* 圖片：完整顯示，不裁切 */
-.exp-photo-images img {
-  width: 100%;
+/* 左側照片：不管是一張或兩張，通通限制在固定寬度，不要吃掉整個畫面 */
+.exp-photo-card > img {
+  width: 230px;
+  max-width: 260px;
+  height: auto;
+  object-fit: contain;        /* 顯示完整圖片，不裁切 */
+  border-radius: 16px;
+  border: 1px solid #e5e0d8;
+  background: #fffdf9;
+  flex-shrink: 0;             /* 圖片不要被壓扁 */
+}
+
+/* 如果你之後有用到 exp-photo-row，也可以留這段，但不是必須 */
+.exp-photo-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.exp-photo-row img {
+  width: 230px;
+  max-width: 260px;
   height: auto;
   object-fit: contain;
   border-radius: 16px;
-  border: 1px solid #e5e8ee;
-  background: #f7f9fb;
+  border: 1px solid #e5e0d8;
+  background: #fffdf9;
+  flex-shrink: 0;
+}
+
+/* 文字區 */
+.exp-photo-text {
+  flex: 1;
+}
+
+.exp-photo-text h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.35rem;
+  color: #2f2923;
+}
+
+.exp-meta-2 {
+  font-size: 0.95rem;
+  color: #8a8279;
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
+.exp-photo-text p {
+  font-size: 0.95rem;
+  color: #453f39;
 }
 
 /* ========== Honors page 特化 ========== */
