@@ -434,6 +434,17 @@ img {
   font-size: 0.95rem;
   color: #453f39;
 }
+/* 統一 Experience 頁面圖片尺寸 */
+.exp-photo-card > img,
+.exp-photo-row img {
+  width: 240px;               /* 統一寬度 */
+  height: 180px;              /* 🔥 統一高度，所有圖片變一致 */
+  object-fit: cover;          /* 🔥 保留比例、不變形，但會自動裁切，使畫面漂亮 */
+  border-radius: 16px;
+  border: 1px solid #e5e0d8;
+  background: #fffdf9;
+  flex-shrink: 0;
+}
 
 /* ========== Honors page 特化 ========== */
 
