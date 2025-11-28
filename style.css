@@ -9,9 +9,9 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Noto Sans TC", sans-serif;
   line-height: 1.7;
-  color: #1f2933;
-  /* 北歐風：淡灰藍背景 + 非常淡的漸層 */
-  background: radial-gradient(circle at top left, #e4f0f5 0, #f5f7fa 42%, #f1f3f6 100%);
+  color: #3f3a36;
+  /* 奶油北歐風背景 */
+  background: radial-gradient(circle at top left, #f7f3ee 0, #f2ece5 40%, #ece5dd 100%);
 }
 
 a {
@@ -25,6 +25,7 @@ a:hover {
 
 img {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -47,10 +48,10 @@ img {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(250, 245, 239, 0.96);
   backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(186, 200, 214, 0.7);
-  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+  border-bottom: 1px solid rgba(214, 202, 188, 0.8);
+  box-shadow: 0 10px 28px rgba(96, 80, 64, 0.12);
 }
 
 .nav-bar {
@@ -65,12 +66,12 @@ img {
   font-size: 1.1rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #111827;
+  color: #3b352f;
 }
 
 .site-subtitle {
   font-size: 0.78rem;
-  color: #7b8794;
+  color: #8a8279;
   margin-top: 0.1rem;
 }
 
@@ -84,7 +85,7 @@ img {
 .nav-link {
   position: relative;
   padding: 0.25rem 0;
-  color: #617184;
+  color: #6d655c;
   transition: color 0.15s ease;
 }
 
@@ -96,12 +97,12 @@ img {
   width: 0;
   height: 2px;
   border-radius: 999px;
-  background: linear-gradient(90deg, #4f7cac, #82c0cc);
+  background: linear-gradient(90deg, #c7a27a, #d8c3a5);
   transition: width 0.18s ease;
 }
 
 .nav-link:hover {
-  color: #111827;
+  color: #3b352f;
 }
 
 .nav-link:hover::after {
@@ -109,7 +110,7 @@ img {
 }
 
 .nav-link.active {
-  color: #111827;
+  color: #3b352f;
   font-weight: 600;
 }
 
@@ -120,28 +121,28 @@ img {
 /* ========== Card / Page Title ========== */
 
 .content-card {
-  background: #ffffff;
+  background: #fdfaf6;
   border-radius: 22px;
-  border: 1px solid #dde3ec;
+  border: 1px solid #e1d7cc;
   box-shadow:
-    0 20px 45px rgba(15, 23, 42, 0.12),
-    0 0 0 1px rgba(255, 255, 255, 0.7);
+    0 20px 45px rgba(73, 54, 35, 0.12),
+    0 0 0 1px rgba(255, 253, 250, 0.8);
   padding: 2.2rem 2.4rem 2.4rem;
 }
 
 .page-title {
   font-size: 1.6rem;
-  color: #111827;
+  color: #2f2923;
   margin-bottom: 0.6rem;
 }
 
 .page-subtitle {
   font-size: 0.96rem;
-  color: #7b8794;
+  color: #8a8279;
   margin-bottom: 1.6rem;
 }
 
-/* ========== Profile page ========== */
+/* ========== Profile page 基本 ========== */
 
 .profile-header {
   display: flex;
@@ -160,9 +161,9 @@ img {
   height: 180px;
   border-radius: 50%;
   object-fit: cover;
-  background: #ffffff;
-  border: 3px solid #e3e8f0;
-  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.26);
+  background: #fefbf7;
+  border: 3px solid #e5d8c7;
+  box-shadow: 0 20px 45px rgba(73, 54, 35, 0.28);
 }
 
 .profile-meta {
@@ -178,10 +179,10 @@ img {
 .profile-meta-row strong {
   display: inline-block;
   min-width: 100px;
-  color: #5a6c7f;
+  color: #7b7066;
 }
 
-/* Section blocks (共用) */
+/* Section blocks */
 
 .section-block {
   margin-top: 1.8rem;
@@ -189,13 +190,13 @@ img {
 
 .section-block h2 {
   font-size: 1.1rem;
-  color: #111827;
+  color: #2f2923;
   margin-bottom: 0.5rem;
 }
 
 .section-block p {
   font-size: 0.96rem;
-  color: #3b4a5a;
+  color: #4b433d;
   margin-bottom: 0.4rem;
 }
 
@@ -203,7 +204,7 @@ img {
   list-style: disc;
   padding-left: 1.25rem;
   font-size: 0.95rem;
-  color: #3b4a5a;
+  color: #4b433d;
 }
 
 .inline-list li + li {
@@ -214,7 +215,7 @@ img {
 
 .section-title {
   font-size: 1.26rem;
-  color: #111827;
+  color: #2f2923;
   margin-bottom: 0.6rem;
 }
 
@@ -222,7 +223,7 @@ img {
   margin-top: 0.4rem;
   padding-left: 1.2rem;
   font-size: 0.95rem;
-  color: #3b4a5a;
+  color: #4b433d;
 }
 
 .pub-list li {
@@ -232,16 +233,16 @@ img {
 .pub-status {
   display: block;
   font-size: 0.88rem;
-  color: #7b8794;
+  color: #9a9187;
   margin-top: 0.1rem;
 }
 
-/* Timeline for Experience (Education & Training) */
+/* Timeline for Experience */
 
 .timeline {
   list-style: none;
   margin-top: 0.8rem;
-  border-left: 2px solid #e0e7f0;
+  border-left: 2px solid #e1dcd4;
   padding-left: 1rem;
 }
 
@@ -258,330 +259,34 @@ img {
   width: 9px;
   height: 9px;
   border-radius: 999px;
-  background: #4f7cac;
-  box-shadow: 0 0 0 3px rgba(79, 124, 172, 0.16);
+  background: #c7a27a;
+  box-shadow: 0 0 0 3px rgba(199, 162, 122, 0.18);
 }
 
 .timeline h3 {
   font-size: 1rem;
-  color: #111827;
+  color: #2f2923;
   margin-bottom: 0.15rem;
 }
 
 .timeline-meta {
   font-size: 0.9rem;
-  color: #7b8794;
+  color: #8a8279;
   margin-bottom: 0.3rem;
 }
 
-/* ========== Experience page 特化 ========== */
-
-/* 卡片式經驗排版 grid（研究經驗 / 學術發表） */
-.exp-grid {
-  margin-top: 0.8rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.2rem;
-}
-/* 左邊放多張照片的容器 */
-.exp-photo-images {
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  max-width: 260px;
-}
-
-/* 圖片：完整顯示，不裁切 */
-.exp-photo-images img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 16px;
-  border: 1px solid #e5e8ee;
-  background: #f7f9fb;
-}
-
-
-/* 北歐風：白色卡片 + 柔和陰影 + 圓角 */
-.exp-card {
-  background: #ffffff;
-  border-radius: 18px;
-  border: 1px solid #dde5f0;
-  padding: 1rem 1.1rem 0.95rem;
-  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.10);
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
-}
-
-.exp-card h3 {
-  font-size: 1.02rem;
-  color: #111827;
-  margin-bottom: 0.2rem;
-}
-
-.exp-meta {
-  font-size: 0.88rem;
-  color: #7b8794;
-  margin-bottom: 0.45rem;
-}
-
-.exp-list,
-.exp-desc {
-  font-size: 0.94rem;
-  color: #3b4a5a;
-}
-
-.exp-list {
-  padding-left: 1.1rem;
-}
-
-.exp-list li + li {
-  margin-top: 0.25rem;
-}
-
-/* hover：輕微浮起，呼應 Honors 卡片 */
-.exp-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.16);
-}
-/* ===== Experience 卡片整體 ===== */
-.exp-photo-card {
-  display: flex;
-  gap: 1.5rem;
-  background: #ffffff;
-  padding: 1.8rem;
-  border-radius: 22px;
-  border: 1px solid #dde3ec;
-  box-shadow: 0 18px 42px rgba(15,23,42,0.08);
-  margin-bottom: 2rem;
-}
-
-/* ===== 左邊圖片並排 ===== */
-.exp-photo-row {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  flex-shrink: 0;
-}
-
-/* ===== 兩張圖完整顯示 ===== */
-.exp-photo-row img {
-  width: 220px;         /* 你可調整：220–260 都好看 */
-  height: auto;
-  object-fit: contain;  /* ⭐ 保證完整顯示，不裁切 */
-  border-radius: 16px;
-  border: 1px solid #e5e7eb;
-  background: #f7f9fb;
-}
-
-/* ===== 右側文字 ===== */
-.exp-photo-text {
-  flex: 1;
-}
-
-.exp-photo-text h3 {
-  font-size: 1.35rem;
-  margin-bottom: 0.35rem;
-  color: #1f2937;
-}
-
-.exp-meta-2 {
-  font-size: 0.95rem;
-  color: #64748b;
-  margin-bottom: 0.8rem;
-  display: block;
-}
-
-/* ===== 手機版（自動改為上下） ===== */
-@media (max-width: 768px) {
-  .exp-photo-card {
-    flex-direction: column;
-  }
-
-  .exp-photo-row {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .exp-photo-row img {
-    width: 100%;
-    max-width: 360px;
-  }
-}
-
-
-/* ========== Honors page 特化 ========== */
-
-/* figcaption 第二行小字樣式（如果有用到） */
-.caption-sub {
-  font-size: 0.85em;
-  color: #556270;
-  margin-top: 2px;
-}
-
-.honors-section {
-  margin-top: 1.8rem;
-}
-
-/* Honors 底下的獎狀圖：獨立圖片牆（在 Honors 條列下面） */
-.honors-gallery {
-  margin-top: 1.2rem;
-}
-
-/* 圖片牆：2–3 欄自動排版，符合北歐風整齊感 */
-.honors-gallery .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.2rem;
-}
-
-/* 獎狀卡片：白卡 + 柔和陰影 */
-.gallery-item {
-  position: relative;
-  background: #ffffff;
-  border-radius: 18px;
-  border: 1px solid #dde5f0;
-  padding: 0.9rem 0.9rem 0.8rem;
-  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.10);
-  text-align: center;
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
-  overflow: visible;  /* 讓圖片放大時可以超出卡片 */
-}
-
-/* 圖片：維持比例，不裁切 */
-.gallery-item img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  background: #ffffff;
-  border-radius: 14px;
-  border: 1px solid #e5e7eb;
-  transition: transform 0.22s ease, box-shadow 0.22s ease;
-  transform-origin: center center;
-}
-
-/* 標題在下面 */
-.gallery-item figcaption {
-  margin-top: 0.55rem;
-  font-size: 0.9rem;
-  color: #334155;
-}
-
-/* hover：卡片微浮起，圖片放大「浮出來」 */
-.gallery-item:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.18);
-  z-index: 5;
-}
-
-.gallery-item:hover img {
-  transform: scale(1.35);            /* 滑鼠摸到圖片 → 放大 */
-  box-shadow: 0 22px 40px rgba(15, 23, 42, 0.25);
-}
-
-/* ========== Footer ========== */
-
-.site-footer {
-  padding: 1.6rem 0 2.2rem;
-  text-align: center;
-  font-size: 0.85rem;
-  color: #9aa5b1;
-}
-
-/* ========== RWD ========== */
-
-@media (max-width: 768px) {
-  .nav-links {
-    gap: 0.8rem;
-    font-size: 0.86rem;
-  }
-
-  .content-card {
-    padding: 1.7rem 1.6rem 1.9rem;
-  }
-
-  .profile-header {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .profile-meta {
-    width: 100%;
-  }
-}
-/* ========== Experience: Photo + Text Cards (Nordic Style) ========== */
-
-.exp-photo-card {
-  display: flex;
-  gap: 1.6rem;
-  background: #ffffff;
-  border: 1px solid #dde3eb;
-  border-radius: 20px;
-  padding: 1.6rem;
-  margin-bottom: 1.8rem;
-  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.10);
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
-}
-
-.exp-photo-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 24px 48px rgba(15, 23, 42, 0.16);
-}
-
-.exp-photo-card img {
-  width: 240px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 16px;
-  border: 1px solid #e5e8ee;
-  background: #f7f9fb;
-}
-
-.exp-photo-text {
-  flex: 1;
-}
-
-.exp-photo-text h3 {
-  font-size: 1.15rem;
-  color: #111827;
-  margin-bottom: 0.25rem;
-}
-
-.exp-meta-2 {
-  font-size: 0.9rem;
-  color: #6b7b89;
-  margin-bottom: 0.6rem;
-}
-
-.exp-photo-text p,
-.exp-photo-text li {
-  font-size: 0.95rem;
-  color: #3b4a5a;
-  margin-bottom: 0.4rem;
-  line-height: 1.6;
-}
-
-@media (max-width: 768px) {
-  .exp-photo-card {
-    flex-direction: column;
-  }
-  .exp-photo-card img {
-    width: 100%;
-    height: auto;
-  }
-}
 /* ========== Profile page with Nordic color blocks ========== */
 
 .profile-card {
-  padding: 0; /* 讓內部自己控制留白 */
+  padding: 0;
   overflow: hidden;
 }
 
-/* 上方彩色 hero 區 */
+/* 上方 hero 區 */
 .profile-hero {
-  background: linear-gradient(135deg, #e4f0ff, #f6fbff);
+  background: linear-gradient(135deg, #f3e6d7, #fdf6ec);
   border-radius: 22px 22px 0 0;
-  border-bottom: 1px solid #d4e1f3;
+  border-bottom: 1px solid #dfcfbe;
   padding: 1.8rem 2.4rem 1.6rem;
 }
 
@@ -607,19 +312,20 @@ img {
   margin-bottom: 1.1rem;
 }
 
-/* 讓 meta 區塊看起來更像資訊列 */
+/* meta 資訊列 */
 .profile-meta-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr);
   row-gap: 0.25rem;
 }
 
-.profile-meta-row {
+.profile-meta-grid .profile-meta-row {
   font-size: 0.95rem;
-  color: #1f2933;
+  color: #3f3a36;
 }
 
-/* 下方兩個色塊區域 */
+/* 下方色塊區域 */
+
 .profile-block-grid {
   padding: 1.8rem 2.4rem 2.1rem;
   display: grid;
@@ -629,37 +335,176 @@ img {
 
 .profile-block {
   border-radius: 18px;
-  border: 1px solid #dde5f3;
+  border: 1px solid #e1d7cc;
   padding: 1.4rem 1.5rem 1.3rem;
-  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.06);
+  box-shadow: 0 14px 32px rgba(73, 54, 35, 0.10);
 }
 
-/* Biography 色塊：淡藍北歐風 */
 .profile-block-bio {
-  background: linear-gradient(135deg, #edf3ff, #f9fbff);
+  background: linear-gradient(135deg, #f7efe4, #fdf8f1);
 }
 
-/* Skill 色塊：帶一點淡綠 */
 .profile-block-skill {
-  background: linear-gradient(135deg, #ecf8f3, #f9fcfb);
-  border-color: #d0e7dc;
+  background: linear-gradient(135deg, #f1f5ef, #fbfdfb);
+  border-color: #d5e1d4;
 }
 
 .profile-block-title {
   font-size: 1.12rem;
-  color: #111827;
+  color: #2f2923;
   margin-bottom: 0.6rem;
 }
 
-/* 讓內文更舒適一點 */
 .profile-block p {
   font-size: 0.95rem;
-  color: #37475a;
+  color: #453f39;
   margin-bottom: 0.45rem;
 }
 
-/* RWD：手機版改成上下堆疊 */
+/* ========== Honors page 特化 ========== */
+
+.caption-sub {
+  font-size: 0.85em;
+  color: #6c6760;
+  margin-top: 2px;
+}
+
+.honors-section {
+  margin-top: 1.8rem;
+}
+
+/* Honors 底下的獎狀圖：圖片牆 */
+.honors-gallery {
+  margin-top: 1.2rem;
+}
+
+/* 圖片牆：自動 2–3 欄 */
+.honors-gallery .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+}
+
+/* 獎狀卡片：奶油色白卡 + 陰影 */
+.gallery-item {
+  position: relative;
+  background: #fdfaf6;
+  border-radius: 18px;
+  border: 1px solid #e3d9cd;
+  padding: 0.9rem 0.9rem 0.8rem;
+  box-shadow: 0 14px 32px rgba(73, 54, 35, 0.12);
+  text-align: center;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  overflow: visible;
+}
+
+/* 圖片：完整顯示，不裁切 */
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: #fffdf9;
+  border-radius: 14px;
+  border: 1px solid #e5e0d8;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  transform-origin: center center;
+}
+
+/* 標題在下面 */
+.gallery-item figcaption {
+  margin-top: 0.55rem;
+  font-size: 0.9rem;
+  color: #3f3a36;
+}
+
+/* hover：卡片微浮起，圖片放大 */
+.gallery-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 46px rgba(73, 54, 35, 0.20);
+  z-index: 5;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.18);
+  box-shadow: 0 22px 40px rgba(73, 54, 35, 0.25);
+}
+
+/* ========== Experience page：照片卡片 ========== */
+
+.exp-photo-card {
+  display: flex;
+  gap: 1.6rem;
+  background: #fdfaf6;
+  padding: 1.8rem 1.9rem;
+  border-radius: 22px;
+  border: 1px solid #e1d7cc;
+  box-shadow: 0 18px 42px rgba(73, 54, 35, 0.12);
+  margin-bottom: 2rem;
+}
+
+/* 左側：多張圖片並排 */
+.exp-photo-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+/* 雙圖並排，完整顯示 */
+.exp-photo-row img {
+  width: 220px;
+  max-width: 260px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 16px;
+  border: 1px solid #e5e0d8;
+  background: #fffdf9;
+}
+
+/* 文字區 */
+.exp-photo-text {
+  flex: 1;
+}
+
+.exp-photo-text h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.35rem;
+  color: #2f2923;
+}
+
+.exp-meta-2 {
+  font-size: 0.95rem;
+  color: #8a8279;
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
+.exp-photo-text p {
+  font-size: 0.95rem;
+  color: #453f39;
+}
+
+/* ========== Footer ========== */
+
+.site-footer {
+  padding: 1.6rem 0 2.2rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #a39a90;
+}
+
+/* ========== RWD ========== */
+
 @media (max-width: 768px) {
+  .nav-links {
+    gap: 0.8rem;
+    font-size: 0.86rem;
+  }
+
+  .content-card {
+    padding: 1.7rem 1.6rem 1.9rem;
+  }
+
   .profile-hero-inner {
     flex-direction: column;
     align-items: flex-start;
@@ -668,5 +513,28 @@ img {
   .profile-block-grid {
     grid-template-columns: minmax(0, 1fr);
     padding: 1.6rem 1.6rem 1.8rem;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-meta {
+    width: 100%;
+  }
+
+  .exp-photo-card {
+    flex-direction: column;
+  }
+
+  .exp-photo-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .exp-photo-row img {
+    width: 100%;
+    max-width: 360px;
   }
 }
