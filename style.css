@@ -5,14 +5,16 @@
   padding: 0;
 }
 
+
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Noto Sans TC", sans-serif;
   line-height: 1.7;
   color: #3f3a36;
-  /* 奶油北歐風背景 */
-  background: radial-gradient(circle at top left, #f7f3ee 0, #f2ece5 40%, #ece5dd 100%);
+  /* 奶油咖啡北歐風背景：中央亮、四周微咖 */
+  background: radial-gradient(circle at top left, #f9f0e6 0, #f2e4d5 40%, #e8d6c4 100%);
 }
+
 
 a {
   color: inherit;
@@ -121,14 +123,15 @@ img {
 /* ========== Card / Page Title ========== */
 
 .content-card {
-  background: #fdfaf6;
+  background: #fdf6ed;              /* 比之前再淡一點的奶茶色 */
   border-radius: 22px;
-  border: 1px solid #e1d7cc;
+  border: 1px solid #ddc4aa;
   box-shadow:
-    0 20px 45px rgba(73, 54, 35, 0.12),
-    0 0 0 1px rgba(255, 253, 250, 0.8);
+    0 20px 45px rgba(73, 54, 35, 0.14),
+    0 0 0 1px rgba(255, 253, 250, 0.85);
   padding: 2.2rem 2.4rem 2.4rem;
 }
+
 
 .page-title {
   font-size: 1.6rem;
@@ -284,11 +287,12 @@ img {
 
 /* 上方 hero 區 */
 .profile-hero {
-  background: linear-gradient(135deg, #f3e6d7, #fdf6ec);
+  background: linear-gradient(135deg, #f1ddc3, #fbe9d6);
   border-radius: 22px 22px 0 0;
-  border-bottom: 1px solid #dfcfbe;
+  border-bottom: 1px solid #d9bfa1;
   padding: 1.8rem 2.4rem 1.6rem;
 }
+
 
 .profile-hero-inner {
   display: flex;
@@ -341,13 +345,15 @@ img {
 }
 
 .profile-block-bio {
-  background: linear-gradient(135deg, #f7efe4, #fdf8f1);
+  /* 明顯偏橘一點的溫暖色系 */
+  background: linear-gradient(135deg, #fff2de, #f9e1c3);
 }
 
 .profile-block-skill {
-  background: linear-gradient(135deg, #f1f5ef, #fbfdfb);
-  border-color: #d5e1d4;
+  background: linear-gradient(135deg, #f3e0cd, #e6cdb2);  /* 比左邊更深的咖啡牛奶 */
+  border-color: #c59a6c;                                  /* 咖啡色邊框 */
 }
+
 
 .profile-block-title {
   font-size: 1.12rem;
