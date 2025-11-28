@@ -360,6 +360,33 @@ img {
   color: #453f39;
   margin-bottom: 0.45rem;
 }
+/* ========== Experience page 特化 ========== */
+
+/* 卡片式經驗排版 grid（研究經驗 / 學術發表） */
+.exp-grid {
+  margin-top: 0.8rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.2rem;
+}
+/* 左邊放多張照片的容器 */
+.exp-photo-images {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 260px;
+}
+
+/* 圖片：完整顯示，不裁切 */
+.exp-photo-images img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 16px;
+  border: 1px solid #e5e8ee;
+  background: #f7f9fb;
+}
 
 /* ========== Honors page 特化 ========== */
 
