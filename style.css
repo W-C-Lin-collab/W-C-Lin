@@ -623,3 +623,8 @@ img {
     max-width: 360px;
   }
 }
+/* Short Biography 左右對齊 */
+.profile-block-bio p {
+  text-align: justify;
+  text-justify: inter-word;
+}
