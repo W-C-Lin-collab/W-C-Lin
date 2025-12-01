@@ -5,16 +5,17 @@
   padding: 0;
 }
 
-
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Noto Sans TC", sans-serif;
   line-height: 1.7;
-  color: #3f3a36;
-  /* 奶油咖啡北歐風背景：中央亮、四周微咖 */
-  background: radial-gradient(circle at top left, #f9f0e6 0, #f2e4d5 40%, #e8d6c4 100%);
+  color: #111827; /* 幾乎黑的深灰 */
+  /* 北歐藍灰背景：中央亮、四周略深 */
+  background: radial-gradient(circle at top left,
+    #edf2f7 0,
+    #e2ecf5 38%,
+    #d7e0ee 100%);
 }
-
 
 a {
   color: inherit;
@@ -50,10 +51,10 @@ img {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(250, 245, 239, 0.96);
+  background: rgba(248, 250, 252, 0.96);          /* 幾乎白的藍灰 */
   backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(214, 202, 188, 0.8);
-  box-shadow: 0 10px 28px rgba(96, 80, 64, 0.12);
+  border-bottom: 1px solid rgba(203, 213, 225, 0.9); /* slate-300 */
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.12);     /* 冷色陰影 */
 }
 
 .nav-bar {
@@ -68,12 +69,12 @@ img {
   font-size: 1.1rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #3b352f;
+  color: #020617;   /* 幾乎純黑 */
 }
 
 .site-subtitle {
   font-size: 0.78rem;
-  color: #8a8279;
+  color: #6b7280;   /* 灰藍 */
   margin-top: 0.1rem;
 }
 
@@ -87,7 +88,7 @@ img {
 .nav-link {
   position: relative;
   padding: 0.25rem 0;
-  color: #6d655c;
+  color: #4b5563;            /* slate-600 */
   transition: color 0.15s ease;
 }
 
@@ -99,12 +100,12 @@ img {
   width: 0;
   height: 2px;
   border-radius: 999px;
-  background: linear-gradient(90deg, #c7a27a, #d8c3a5);
+  background: linear-gradient(90deg, #2563eb, #38bdf8); /* 藍 → 青藍 */
   transition: width 0.18s ease;
 }
 
 .nav-link:hover {
-  color: #3b352f;
+  color: #0f172a;  /* slate-900 */
 }
 
 .nav-link:hover::after {
@@ -112,7 +113,7 @@ img {
 }
 
 .nav-link.active {
-  color: #3b352f;
+  color: #0f172a;
   font-weight: 600;
 }
 
@@ -123,25 +124,24 @@ img {
 /* ========== Card / Page Title ========== */
 
 .content-card {
-  background: #fdf6ed;              /* 比之前再淡一點的奶茶色 */
+  background: #f9fafb;              /* 幾乎白的冷灰 */
   border-radius: 22px;
-  border: 1px solid #ddc4aa;
+  border: 1px solid #d0d7e6;        /* 冷色邊框 */
   box-shadow:
-    0 20px 45px rgba(73, 54, 35, 0.14),
-    0 0 0 1px rgba(255, 253, 250, 0.85);
+    0 20px 45px rgba(15, 23, 42, 0.14),
+    0 0 0 1px rgba(255, 255, 255, 0.9);
   padding: 2.2rem 2.4rem 2.4rem;
 }
 
-
 .page-title {
   font-size: 1.6rem;
-  color: #2f2923;
+  color: #020617;
   margin-bottom: 0.6rem;
 }
 
 .page-subtitle {
   font-size: 0.96rem;
-  color: #8a8279;
+  color: #6b7280;
   margin-bottom: 1.6rem;
 }
 
@@ -164,9 +164,9 @@ img {
   height: 180px;
   border-radius: 50%;
   object-fit: cover;
-  background: #fefbf7;
-  border: 3px solid #e5d8c7;
-  box-shadow: 0 20px 45px rgba(73, 54, 35, 0.28);
+  background: #ffffff;
+  border: 3px solid #d1d5db;                /* 灰邊框 */
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.28);
 }
 
 .profile-meta {
@@ -182,7 +182,7 @@ img {
 .profile-meta-row strong {
   display: inline-block;
   min-width: 100px;
-  color: #7b7066;
+  color: #4b5563;
 }
 
 /* Section blocks */
@@ -193,13 +193,13 @@ img {
 
 .section-block h2 {
   font-size: 1.1rem;
-  color: #2f2923;
+  color: #020617;
   margin-bottom: 0.5rem;
 }
 
 .section-block p {
   font-size: 0.96rem;
-  color: #4b433d;
+  color: #1f2933;
   margin-bottom: 0.4rem;
 }
 
@@ -207,7 +207,7 @@ img {
   list-style: disc;
   padding-left: 1.25rem;
   font-size: 0.95rem;
-  color: #4b433d;
+  color: #1f2933;
 }
 
 .inline-list li + li {
@@ -218,7 +218,7 @@ img {
 
 .section-title {
   font-size: 1.26rem;
-  color: #2f2923;
+  color: #020617;
   margin-bottom: 0.6rem;
 }
 
@@ -226,7 +226,7 @@ img {
   margin-top: 0.4rem;
   padding-left: 1.2rem;
   font-size: 0.95rem;
-  color: #4b433d;
+  color: #111827;
 }
 
 .pub-list li {
@@ -236,7 +236,7 @@ img {
 .pub-status {
   display: block;
   font-size: 0.88rem;
-  color: #9a9187;
+  color: #6b7280;
   margin-top: 0.1rem;
 }
 
@@ -245,7 +245,7 @@ img {
 .timeline {
   list-style: none;
   margin-top: 0.8rem;
-  border-left: 2px solid #e1dcd4;
+  border-left: 2px solid #e5e7eb;
   padding-left: 1rem;
 }
 
@@ -262,19 +262,19 @@ img {
   width: 9px;
   height: 9px;
   border-radius: 999px;
-  background: #c7a27a;
-  box-shadow: 0 0 0 3px rgba(199, 162, 122, 0.18);
+  background: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.18);
 }
 
 .timeline h3 {
   font-size: 1rem;
-  color: #2f2923;
+  color: #020617;
   margin-bottom: 0.15rem;
 }
 
 .timeline-meta {
   font-size: 0.9rem;
-  color: #8a8279;
+  color: #6b7280;
   margin-bottom: 0.3rem;
 }
 
@@ -287,12 +287,11 @@ img {
 
 /* 上方 hero 區 */
 .profile-hero {
-  background: linear-gradient(135deg, #f1ddc3, #fbe9d6);
+  background: linear-gradient(135deg, #e5f0ff, #d9e4ff); /* 淺藍漸層 */
   border-radius: 22px 22px 0 0;
-  border-bottom: 1px solid #d9bfa1;
+  border-bottom: 1px solid #c7d2fe;
   padding: 1.8rem 2.4rem 1.6rem;
 }
-
 
 .profile-hero-inner {
   display: flex;
@@ -325,7 +324,7 @@ img {
 
 .profile-meta-grid .profile-meta-row {
   font-size: 0.95rem;
-  color: #3f3a36;
+  color: #020617;
 }
 
 /* 下方色塊區域 */
@@ -339,61 +338,60 @@ img {
 
 .profile-block {
   border-radius: 18px;
-  border: 1px solid #e1d7cc;
+  border: 1px solid #d0d7e6;
   padding: 1.4rem 1.5rem 1.3rem;
-  box-shadow: 0 14px 32px rgba(73, 54, 35, 0.10);
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.10);
 }
 
 .profile-block-bio {
-  /* 明顯偏橘一點的溫暖色系 */
-  background: linear-gradient(135deg, #fff2de, #f9e1c3);
+  /* 淺藍灰色塊 */
+  background: linear-gradient(135deg, #f3f7ff, #e6efff);
 }
 
 .profile-block-skill {
-  background: linear-gradient(135deg, #f3e0cd, #e6cdb2);  /* 比左邊更深的咖啡牛奶 */
-  border-color: #c59a6c;                                  /* 咖啡色邊框 */
+  /* 稍深的藍灰色塊 */
+  background: linear-gradient(135deg, #e5ecff, #d2e1ff);
+  border-color: #9ca3af;
 }
-
 
 .profile-block-title {
   font-size: 1.12rem;
-  color: #2f2923;
+  color: #020617;
   margin-bottom: 0.6rem;
 }
 
 .profile-block p {
   font-size: 0.95rem;
-  color: #453f39;
+  color: #111827;
   margin-bottom: 0.45rem;
 }
-/* ========== Experience page 特化 ========== */
+
+/* Short Biography 左右對齊 */
+.profile-block-bio p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* 全站文字左右對齊 */
+p, li, .page-subtitle, .profile-meta-row {
+  text-align: justify;
+  text-justify: inter-word;
+}
 
 /* ========== Experience page：照片卡片 ========== */
 
 .exp-photo-card {
   display: flex;
   gap: 1.6rem;
-  background: #fdfaf6;
+  background: #f8fafc;              /* 冷白藍 */
   padding: 1.8rem 1.9rem;
   border-radius: 22px;
-  border: 1px solid #e1d7cc;
-  box-shadow: 0 18px 42px rgba(73, 54, 35, 0.12);
+  border: 1px solid #d0d7e6;
+  box-shadow: 0 18px 42px rgba(15, 23, 42, 0.12);
   margin-bottom: 2rem;
 }
 
-/* 左側照片：不管是一張或兩張，通通限制在固定寬度，不要吃掉整個畫面 */
-.exp-photo-card > img {
-  width: 230px;
-  max-width: 260px;
-  height: auto;
-  object-fit: contain;        /* 顯示完整圖片，不裁切 */
-  border-radius: 16px;
-  border: 1px solid #e5e0d8;
-  background: #fffdf9;
-  flex-shrink: 0;             /* 圖片不要被壓扁 */
-}
-
-/* 如果你之後有用到 exp-photo-row，也可以留這段，但不是必須 */
+/* 左側：多張圖片並排 */
 .exp-photo-row {
   display: flex;
   flex-direction: row;
@@ -401,14 +399,15 @@ img {
   flex-shrink: 0;
 }
 
+/* 統一 Experience 頁面圖片尺寸 */
+.exp-photo-card > img,
 .exp-photo-row img {
-  width: 230px;
-  max-width: 260px;
-  height: auto;
-  object-fit: contain;
+  width: 240px;
+  height: 180px;
+  object-fit: cover;         /* 保持比例、略裁切，畫面好看 */
   border-radius: 16px;
-  border: 1px solid #e5e0d8;
-  background: #fffdf9;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
   flex-shrink: 0;
 }
 
@@ -420,37 +419,26 @@ img {
 .exp-photo-text h3 {
   font-size: 1.35rem;
   margin-bottom: 0.35rem;
-  color: #2f2923;
+  color: #020617;
 }
 
 .exp-meta-2 {
   font-size: 0.95rem;
-  color: #8a8279;
+  color: #6b7280;
   margin-bottom: 0.8rem;
   display: block;
 }
 
 .exp-photo-text p {
   font-size: 0.95rem;
-  color: #453f39;
-}
-/* 統一 Experience 頁面圖片尺寸 */
-.exp-photo-card > img,
-.exp-photo-row img {
-  width: 240px;               /* 統一寬度 */
-  height: 180px;              /* 🔥 統一高度，所有圖片變一致 */
-  object-fit: cover;          /* 🔥 保留比例、不變形，但會自動裁切，使畫面漂亮 */
-  border-radius: 16px;
-  border: 1px solid #e5e0d8;
-  background: #fffdf9;
-  flex-shrink: 0;
+  color: #111827;
 }
 
 /* ========== Honors page 特化 ========== */
 
 .caption-sub {
   font-size: 0.85em;
-  color: #6c6760;
+  color: #4b5563;
   margin-top: 2px;
 }
 
@@ -470,14 +458,14 @@ img {
   gap: 1.2rem;
 }
 
-/* 獎狀卡片：奶油色白卡 + 陰影 */
+/* 獎狀卡片：冷白卡 + 藍灰陰影 */
 .gallery-item {
   position: relative;
-  background: #fdfaf6;
+  background: #ffffff;
   border-radius: 18px;
-  border: 1px solid #e3d9cd;
+  border: 1px solid #d3def0;
   padding: 0.9rem 0.9rem 0.8rem;
-  box-shadow: 0 14px 32px rgba(73, 54, 35, 0.12);
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.12);
   text-align: center;
   transition: transform 0.18s ease, box-shadow 0.18s ease;
   overflow: visible;
@@ -488,9 +476,9 @@ img {
   width: 100%;
   height: auto;
   object-fit: contain;
-  background: #fffdf9;
+  background: #f9fafb;
   border-radius: 14px;
-  border: 1px solid #e5e0d8;
+  border: 1px solid #e5e7eb;
   transition: transform 0.22s ease, box-shadow 0.22s ease;
   transform-origin: center center;
 }
@@ -499,74 +487,19 @@ img {
 .gallery-item figcaption {
   margin-top: 0.55rem;
   font-size: 0.9rem;
-  color: #3f3a36;
+  color: #111827;
 }
 
 /* hover：卡片微浮起，圖片放大 */
 .gallery-item:hover {
   transform: translateY(-6px);
-  box-shadow: 0 22px 46px rgba(73, 54, 35, 0.20);
+  box-shadow: 0 22px 46px rgba(15, 23, 42, 0.20);
   z-index: 5;
 }
 
 .gallery-item:hover img {
   transform: scale(1.18);
-  box-shadow: 0 22px 40px rgba(73, 54, 35, 0.25);
-}
-
-/* ========== Experience page：照片卡片 ========== */
-
-.exp-photo-card {
-  display: flex;
-  gap: 1.6rem;
-  background: #fdfaf6;
-  padding: 1.8rem 1.9rem;
-  border-radius: 22px;
-  border: 1px solid #e1d7cc;
-  box-shadow: 0 18px 42px rgba(73, 54, 35, 0.12);
-  margin-bottom: 2rem;
-}
-
-/* 左側：多張圖片並排 */
-.exp-photo-row {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  flex-shrink: 0;
-}
-
-/* 雙圖並排，完整顯示 */
-.exp-photo-row img {
-  width: 220px;
-  max-width: 260px;
-  height: auto;
-  object-fit: contain;
-  border-radius: 16px;
-  border: 1px solid #e5e0d8;
-  background: #fffdf9;
-}
-
-/* 文字區 */
-.exp-photo-text {
-  flex: 1;
-}
-
-.exp-photo-text h3 {
-  font-size: 1.35rem;
-  margin-bottom: 0.35rem;
-  color: #2f2923;
-}
-
-.exp-meta-2 {
-  font-size: 0.95rem;
-  color: #8a8279;
-  margin-bottom: 0.8rem;
-  display: block;
-}
-
-.exp-photo-text p {
-  font-size: 0.95rem;
-  color: #453f39;
+  box-shadow: 0 22px 40px rgba(15, 23, 42, 0.25);
 }
 
 /* ========== Footer ========== */
@@ -575,7 +508,7 @@ img {
   padding: 1.6rem 0 2.2rem;
   text-align: center;
   font-size: 0.85rem;
-  color: #a39a90;
+  color: #6b7280;
 }
 
 /* ========== RWD ========== */
@@ -622,14 +555,4 @@ img {
     width: 100%;
     max-width: 360px;
   }
-}
-/* Short Biography 左右對齊 */
-.profile-block-bio p {
-  text-align: justify;
-  text-justify: inter-word;
-}
-/* 全站文字左右對齊 */
-p, li, .page-subtitle, .profile-meta-row {
-  text-align: justify;
-  text-justify: inter-word;
 }
