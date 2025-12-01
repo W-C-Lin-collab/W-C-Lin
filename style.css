@@ -556,18 +556,3 @@ p, li, .page-subtitle, .profile-meta-row {
     max-width: 360px;
   }
 }
-/* 讓 Name / Email 等資料像一般文字一樣排，不要拉出大空格 */
-.profile-meta-grid {
-  display: block !important;          /* 不用 grid，恢復一般區塊排版 */
-}
-
-.profile-meta-row {
-  text-align: left !important;        /* 不要左右對齊，避免空格被拉開 */
-  text-justify: auto !important;
-}
-
-/* label（Name：Email：）不要再撐寬度 */
-.profile-meta-row strong {
-  display: inline !important;
-  min-width: 0 !important;
-}
