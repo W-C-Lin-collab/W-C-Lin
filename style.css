@@ -373,7 +373,7 @@ img {
 }
 
 /* 全站文字左右對齊 */
-p, li, .page-subtitle, .profile-meta-row {
+p, li, .page-subtitle, {
   text-align: justify;
   text-justify: inter-word;
 }
@@ -555,4 +555,22 @@ p, li, .page-subtitle, .profile-meta-row {
     width: 100%;
     max-width: 360px;
   }
+}
+/* -------- 修正 Profile 上方 Name / Email 排版 -------- */
+
+/* 讓 meta 區塊不要用 grid，回到正常一行一行 */
+.profile-meta-grid {
+  display: block !important;
+}
+
+/* Name / Email / Education / Research Topic 一律正常靠左，不左右對齊 */
+.profile-meta-row {
+  text-align: left !important;
+  text-justify: auto !important;
+}
+
+/* label 「Name：」不要再撐寬度，就跟一般文字一樣緊貼 */
+.profile-meta-row strong {
+  display: inline !important;
+  min-width: 0 !important;
 }
