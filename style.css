@@ -181,7 +181,7 @@ img {
 
 .profile-meta-row strong {
   display: inline-block;
-  min-width: 100px;
+  min-width: 0;
   color: #4b5563;
 }
 
