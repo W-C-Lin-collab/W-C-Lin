@@ -556,3 +556,8 @@ p, li, .page-subtitle, .profile-meta-row {
     max-width: 360px;
   }
 }
+/* 讓 Name / Email 資訊改回正常靠左 */
+.profile-meta-row {
+  text-align: left;
+  text-justify: auto;
+}
