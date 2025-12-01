@@ -574,3 +574,16 @@ p, li, .page-subtitle, {
   display: inline !important;
   min-width: 0 !important;
 }
+/* ---- 讓 Publications 的 Conference Presentations 左右對齊 ---- */
+
+.content-card ol li {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* 讓最後一行也能左右貼齊（SCI bibliography 效果） */
+.content-card ol li::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
