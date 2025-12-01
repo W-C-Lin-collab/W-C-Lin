@@ -373,7 +373,7 @@ img {
 }
 
 /* 全站文字左右對齊 */
-p, li, .page-subtitle, {
+p, li, .page-subtitle, .profile-meta-row {
   text-align: justify;
   text-justify: inter-word;
 }
